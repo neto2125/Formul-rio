@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-image: linear-gradient(to right, rgb(59, 45, 45),rgb(139, 63, 63),rgb(247, 9, 9));
+
+        }
+        .box {  color: white;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgb(92, 46, 46);
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%;
+
+        }
+        fieldset {
+            border: 2px solid brown;
+        }
+        legend {
+            border: 3px solid brown;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: brown;
+            border-radius: 8px;
+        }
+        inputbox {
+            position: relative;
+        
+        }
+        inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend>Formulário</legend>
+                <br><br>
+                <div class="inputbox">
+                    <input type="text" name="text" id="nome" class="inputUser" required>
+                    <label for="Nome">Nome Completo</label>
+                </div><br>
+                <div class="inputbox">
+                    <input type="Email" name=" Email" id="Email" class="inputUser" required>
+                    <label for="Email">Coloque o seu Email</label>
+                </div><br>
+                <div class="inputbox">
+                    <input type="password" name="password" id="password" class="inputUser"required>
+                    <label for="password">Coloque a sua Senha</label>
+                </div><br>
+                <div>
+                    <p>Sexo:</p>
+                    <input type="radio" name="Gênero" id="Feminino" value="Feminino" required >
+                    <label for="Feminino">Feminino</label>
+                </div>
+                <div class="inputbox">
+                    <input type="radio" name="Gênero" id="Masculino" value="Masculino" required>
+                    <label for="Masculino">Marculino</label>
+                </div>
+                <div class="inputbox">
+                    <input type="radio" name="Genero" id="Indiferente" value="Indiferente" required>
+                    <label for="Indiferente">Indiferente</label>
+                    <br>
+                </div>
+                <div class="inputbox">
+                    <label for="Data de Nascimento"><b>Data de Nascimento</b></label>
+                    <input type="date" name="Data de Nascimento" id="Data de Nascimento" required>
+                    <br><br>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="Cidade" id="Cidade" required>
+                    <label for="Cidade"> Digite a sua Cidade</label>
+                </div><br>
+                <div class="inputbox">
+                    <input type="text" name="Estado" id="Estado" required>
+                    <label for="Estado">Digite o seu Estado</label>
+                </div><br>
+                <div class="inputbox">
+                    <input type="text" name="Endereço" id="Endereço" required>
+                    <label for="Endereço">Digite o seu Endereço</label>
+                </div>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
